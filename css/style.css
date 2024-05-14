@@ -1,0 +1,77 @@
+:root{
+    /* Colores Primarios */
+    --amarillo:hsl(75, 94%, 57%);
+
+   /* Colores ### Neutro */
+    --blanco: hsl(0, 0%, 100%);
+    --gris: hsl(0, 0%, 20%);    
+    --grisclarito: rgb(178, 186, 187);
+    --grisOscuro: hsl(0, 0%, 12%);
+    --negro-apagado: hsl(0, 0%, 8%);
+
+    /* Tipografias */
+    --base-font: "Inter";  /* tipografia base de todo el sitio  */
+}
+
+html{
+    width: 1440px;
+    font-size: 14px;
+    background-color: var(--negro-apagado);
+}
+
+.contenedor,.titulo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    color: var(--blanco); 
+}
+
+.subtitulo{
+    margin-top: 0px;
+    color: var(--amarillo) ;
+}
+
+.texto{
+    margin-top: 0.5rem;
+}
+
+.perfil {
+    width: 300px;
+    margin: 90px auto;
+    padding: 50px;
+    border: 1px solid var(--gris);
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--grisOscuro);
+    padding-bottom: 1.5rem;
+}
+
+.links-sociales {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links-sociales li {
+    margin-bottom: 10px;
+}
+
+.links-sociales li a {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 8px 16px;
+    background-color: var(--gris);
+    color: var(--blanco); 
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.links-sociales li a:hover {
+    background-color: var(--grisclarito);
+}
+
+.imagen{
+    width: 120px; /* Establece el ancho de la imagen en 200 píxeles */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+    border-radius: 50%;
+}
